@@ -13,7 +13,7 @@ body {
     background-color: rgb(245, 245, 245);
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     margin: 0;
     z-index: 1;
@@ -44,7 +44,7 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    height: 4%;
+    height: auto;
     gap: .65rem;
     backdrop-filter: blur(12px);
     z-index: 2;
@@ -60,7 +60,7 @@ a {
 
 .shingeki-header-left img {
     width: auto;
-    height: 55px;
+    height: 40px;
     border-radius: 50%;
 }
 
@@ -239,10 +239,7 @@ main {
 }
 
 .shingeki-footer {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    margin: 0 auto;
+    margin-top: auto;
     width: 100%;
     height: auto;
     display: flex;
