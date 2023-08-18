@@ -8,6 +8,10 @@
     <script src="https://kit.fontawesome.com/40dcd7abaa.js" crossorigin="anonymous"></script>
     <script src="./js/site.js"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
     <meta name="description" content="Largest Attack on Titan / Shingeki no Kyojin community on the Internet. All the information and news about the manga and anime.">
 
     <!-- Facebook Meta Tags -->
@@ -85,62 +89,91 @@
     <nav class="shingeki-header">
         <div class="shingeki-header-left">
             <img src="https://cdn.discordapp.com/attachments/784521625004671007/948430999405072454/aot_guild.gif" alt="pfp" />
-            <span class="shingeki-header-left label">
+            <span class="shingeki-header label" style="font-weight: 800;">
                 <a href="#">AoT Wiki</a>
+            </span>
+        </div>
+        <div class="shingeki-header-right">
+            <span class="shingeki-header label">
+                <a href="http://discord.gg/attackontitan">Join us on Discord!</a>
             </span>
         </div>
     </nav>
     <main role="main">
-        <img class="shingeki-pfp" src="https://cdn.discordapp.com/attachments/784521625004671007/948430999405072454/aot_guild.gif" alt="pfp" />
-        <span class="title">Attack on Titan Wiki</span>
-        <span class="informative">Follow us for the latest Attack on Titan anime and manga news!</span>
-        <div class="social-list">
-            <a class="social facebook" href="https://facebook.com/AttackOnTitanWiki" target="_blank" type="button">
-                <i class="fa-brands fa-facebook"></i> Facebook
-            </a>
-            <a class="social instagram" href="http://instagram.com/attackontitanwiki" target="_blank" type="button">
-                <i class="fa-brands fa-instagram"></i> Instagram
-            </a>
-            <a class="social twitter" href="https://twitter.com/aotwiki" target="_blank" type="button">
-                <i class="fa-brands fa-twitter"></i> Twitter
-            </a>
-            <a class="social kofi" href="https://ko-fi.com/aotwiki" target="_blank" type="button">
-                <i class="fa fa-coffee"></i> Ko-Fi
-            </a>
-            <a class="social discord" href="http://discord.gg/attackontitan" target="_blank" type="button">
-                <i class="fa-brands fa-discord"></i> Discord
-            </a>
-            <a class="social fandom" href="https://attackontitan.fandom.com/wiki/Attack_on_Titan_Wiki" target="_blank" type="button">
-                <img style="width: auto; height: 1rem; color: white; filter: brightness(0) invert(1);" src="https://d1fdloi71mui9q.cloudfront.net/X3Q34SeBScq0LIRZ4MTp_1200px-Fandom_heart-logo.svg.png" /> Fandom
-            </a>
-        </div>
-        <hr />
         <div class="about">
             <div class="about-header-section" style="display: flex; flex-direction: row; gap: 0.2rem;">
+                <div id="homeBtn" class="about-header">
+                    <span>🏠 Home</span>
+                </div>
                 <div id="aboutBtn" class="about-header">
-                    <span>About Us</span>
+                    <span>ℹ️ About Us</span>
                 </div>
                 <div id="businessBtn" class="about-header">
-                    <span>Business</span>
+                    <span>📧 Contact</span>
                 </div>
             </div>
-            <div class="about-content-section" style="display: flex; width: 100%;">
+            <div class="about-content-section" style="display: flex; width: 100%; justify-content: center; align-items: center; text-align: center;">
+                <div id="home" class="about-content" style="display: flex; flex-direction: column; width: 100%; justify-content: center; align-items: center; text-align: center;">
+                    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 0.2rem;">
+                        <br />
+                        <img class="shingeki-pfp" src="https://cdn.discordapp.com/attachments/784521625004671007/948430999405072454/aot_guild.gif" alt="pfp" />
+                        <span class="title">Attack on Titan Wiki</span>
+                        <span class="informative">Follow us for the latest Attack on Titan anime and manga news!</span>
+                        <div class="social-list">
+                            <a class="social twitter" href="https://twitter.com/aotwiki" target="_blank" type="button">
+                                <i class="fa-brands fa-twitter"></i> Twitter
+                            </a>
+                            <a class="social instagram" href="http://instagram.com/attackontitanwiki" target="_blank" type="button">
+                                <i class="fa-brands fa-instagram"></i> Instagram
+                            </a>
+                            <a class="social facebook" href="https://facebook.com/AttackOnTitanWiki" target="_blank" type="button">
+                                <i class="fa-brands fa-facebook"></i> Facebook
+                            </a>
+                            <a class="social fandom" href="https://attackontitan.fandom.com/wiki/Attack_on_Titan_Wiki" target="_blank" type="button">
+                                <img style="width: auto; height: 1rem; color: white; filter: brightness(0) invert(1);" src="https://d1fdloi71mui9q.cloudfront.net/X3Q34SeBScq0LIRZ4MTp_1200px-Fandom_heart-logo.svg.png" /> Fandom
+                            </a>
+                        </div>
+                        <br />
+                        <div class="social-list">
+                            <a class="social kofi" href="https://ko-fi.com/aotwiki" target="_blank" type="button" style="font-size: 1rem; padding: 10px;">
+                                <i class="fa fa-coffee"></i> Support Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <div id="about" class="about-content">
-                    <p>Founded in 2011, the <strong>Attack on Titan Wiki</strong> started as a fan wiki hosted on the Fandom network and centered around the <em>Attack on Titan</em> (進撃の巨人, <em>Shingeki no Kyojin</em><sup style="color: rgb(190, 130, 130); font-weight: 500;"><a href="http://en.wikipedia.org/wiki/Help:Japanese">[1]</a></sup>) series by Hajime Isayama<sup style="color: rgb(190, 130, 130); font-weight: 500;"><a href="http://en.wikipedia.org/wiki/Hajime_Isayama">[2]</a></sup>, and later expanded to several social media.</p>
-                    <p>Our wiki serves as a detailed encyclopedia that provides the most up-to-date, thorough, and accurate information about the AoT franchise, with strict quality standards to guarantee that only official and confirmed information makes it to our articles.</p>
-                    <p>Our social media presence, which is currently spread throughout 4 social networks (Facebook, Instagram, Twitter, and Discord), is <strong>the main source of AoT news on the web</strong>, and it's also host of <strong>more than 2 million AoT fans</strong>; being by far the largest and most active community about the series on the Internet, and one of the largest manga/anime communities overall.</p>
-                    <p>On our websites you'll find well-moderated places where to discuss everything AoT with many more fans like you.</p>
-                    <p>Join us and be part of the AoT Wiki community!</p>
+                    <p>
+                        Founded in 2011, the <strong>Attack on Titan Wiki</strong> started as a fan wiki hosted on the Fandom network and centered around the <em>Attack on Titan</em> (進撃の巨人, <em>Shingeki no Kyojin</em>) series by Hajime Isayama, and later expanded to several social media.
+                        <br />
+                        Our wiki serves as a detailed encyclopedia that provides the most up-to-date, thorough, and accurate information about the AoT franchise, with strict quality standards to guarantee that only official and confirmed information makes it to our articles.
+                        <br />
+                        <br />
+                        Our social media presence, which is currently spread throughout 4 social networks (Facebook, Instagram, Twitter, and Discord), is <strong>the main source of AoT news on the web</strong>, and it's also host of <strong>more than 2 million AoT fans</strong>; being by far the largest and most active community about the series on the Internet, and one of the largest manga/anime communities overall.
+                        <br />
+                        <br />
+                        On our websites you'll find well-moderated places where to discuss everything AoT with many more fans like you.
+                        <br />
+                        Join us and be part of the AoT Wiki community!
+                    </p>
                 </div>
                 <div id="business" class="about-content">
-                    <p>For business inquiries and partnerships, contact us at:</p>
-                    <p><a class="link" href="mailto:business@aot.wiki">business@aot.wiki</a></p>
+                    <p>
+                        For business inquiries and partnerships, contact us at:
+                        <br />
+                        <br />
+                        <a style="font-size: 1.4rem;" class="link" href="mailto:business@aot.wiki">business@aot.wiki</a>
+                        <br />
+                        <br />
+                        <span style="font-size: .9rem;">
+                            To appeal a Discord ban, use our <a class="link" href="https://banappeal.aot.wiki" target="_blank">ban appeal form</a>.
+                        </span>
+                    </p>
                 </div>
             </div>
         </div>
     </main>
     <footer class="shingeki-footer">
-        <span class="footer-label">&copy; 2022-2023 <a href="https://aot.wikia.com/" target="_blank">Attack on Titan Wiki</a></span>
+        <span class="footer-label">&copy; 2011-2023 <a href="https://aot.wikia.com/" target="_blank">Attack on Titan Wiki</a></span>
         <span class="footer-label-secondary"><a href="https://aisys.dev" target="_blank">Site by Hackmagician</a></span>
     </footer>
 </body>
