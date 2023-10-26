@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AoT Wiki</title>
-    <link href="./css/aot-wiki.common.css" rel="stylesheet" />
+    <link href="./assets/css/aot-wiki.common.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/40dcd7abaa.js" crossorigin="anonymous"></script>
-    <script src="./js/site.js"></script>
+    <script src="./assets/js/site.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -94,22 +94,61 @@
             </span>
         </div>
         <div class="shingeki-header-right">
-            <span class="shingeki-header label">
+            <span id="disc" class="shingeki-header label">
                 <a href="http://discord.gg/attackontitan">Join us on Discord!</a>
             </span>
+            <span id="hamburgerMenu" class="hamburgerMenu shingeki-header label">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </span>
+            <div id="hamburgerDropdown" class="hamburgerDropdown label">
+                <span id="homeBtn2" style="padding-bottom: 8px; width: 100%; cursor: pointer; border-bottom: 1px solid white;"><i class="fa fa-home" aria-hidden="true"></i> Home</span>
+                <span id="aboutBtn2" style="padding-bottom: 8px; width: 100%; cursor: pointer; border-bottom: 1px solid white; "><i class="fa fa-info-circle" aria-hidden="true"></i> About Us</span>
+                <span id="businessBtn2" style="padding-bottom: 8px; width: 100%; cursor: pointer; border-bottom: 1px solid white; "><i class="fa fa-envelope" aria-hidden="true"></i> Contact</span>
+                <a href="http://discord.gg/attackontitan">Join us on Discord!</a>
+            </div>
         </div>
     </nav>
+    <div id="countdown-mobile" class="countdown" style="justify-content: center;">
+        <span style="color: var(--light); font-weight: 900; font-size: 28px;">
+            Attack on Titan Season 4 Part 3
+        </span>
+        <div class="row">
+            <div id="ct-md" class="countdown-days">
+            </div>
+            <div id="ct-mh" class="countdown-hours">
+            </div>
+            <div id="ct-mm" class="countdown-minutes">
+            </div>
+            <div id="ct-ms" class="countdown-seconds">
+            </div>
+        </div>
+    </div>
     <main role="main">
+        <div id="countdown-pc" class="countdown">
+            <span style="color: var(--light); font-weight: 900; font-size: 38px;">
+                Attack on Titan Season 4 Part 3
+            </span>
+            <div class="row">
+                <div id="ctd" class="countdown-days">
+                </div>
+                <div id="cth" class="countdown-hours">
+                </div>
+                <div id="ctm" class="countdown-minutes">
+                </div>
+                <div id="cts" class="countdown-seconds">
+                </div>
+            </div>
+        </div>
         <div class="about">
-            <div class="about-header-section" style="display: flex; flex-direction: row; gap: 0.2rem;">
+            <div class="about-header-section">
                 <div id="homeBtn" class="about-header">
-                    <span>🏠 Home</span>
+                    <span><i class="fa fa-home" aria-hidden="true"></i> Home</span>
                 </div>
                 <div id="aboutBtn" class="about-header">
-                    <span>ℹ️ About Us</span>
+                    <span><i class="fa fa-info-circle" aria-hidden="true"></i> About Us</span>
                 </div>
                 <div id="businessBtn" class="about-header">
-                    <span>📧 Contact</span>
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i> Contact</span>
                 </div>
             </div>
             <div class="about-content-section" style="display: flex; width: 100%; justify-content: center; align-items: center; text-align: center;">
@@ -136,25 +175,17 @@
                         <br />
                         <div class="social-list">
                             <a class="social kofi" href="https://ko-fi.com/aotwiki" target="_blank" type="button" style="font-size: 1rem; padding: 10px;">
-                                <i class="fa fa-coffee"></i> Support Us
+                                <i class="fa fa-coffee"></i> Support Us <i class="fa fa-heart" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div id="about" class="about-content">
-                    <p>
-                        Founded in 2011, the <strong>Attack on Titan Wiki</strong> started as a fan wiki hosted on the Fandom network and centered around the <em>Attack on Titan</em> (進撃の巨人, <em>Shingeki no Kyojin</em>) series by Hajime Isayama, and later expanded to several social media.
-                        <br />
-                        Our wiki serves as a detailed encyclopedia that provides the most up-to-date, thorough, and accurate information about the AoT franchise, with strict quality standards to guarantee that only official and confirmed information makes it to our articles.
-                        <br />
-                        <br />
-                        Our social media presence, which is currently spread throughout 4 social networks (Facebook, Instagram, Twitter, and Discord), is <strong>the main source of AoT news on the web</strong>, and it's also host of <strong>more than 2 million AoT fans</strong>; being by far the largest and most active community about the series on the Internet, and one of the largest manga/anime communities overall.
-                        <br />
-                        <br />
-                        On our websites you'll find well-moderated places where to discuss everything AoT with many more fans like you.
-                        <br />
-                        Join us and be part of the AoT Wiki community!
-                    </p>
+                    <p>Founded in 2011, the <strong>Attack on Titan Wiki</strong> started as a fan wiki hosted on the Fandom network and centered around the <em>Attack on Titan</em> (進撃の巨人, <em>Shingeki no Kyojin</em>) series by Hajime Isayama, and later expanded to several social media platforms.</p>
+                    <p>Our wiki serves as a detailed encyclopedia that provides the most up-to-date, thorough, and accurate information about the <em>AoT</em> franchise, with strict quality standards to guarantee that only official and confirmed information makes it to our articles.</p>
+                    <p>Our social media presence, which is currently spread across 4 social networks (Twitter, Instagram, Facebook, and Discord), is <strong>the main source of <em>AoT</em> news on the web</strong>, and it's also the host of <strong>almost 3 million <em>AoT</em> fans</strong>; being by far the largest and most active community about the series on the Internet, and one of the largest manga/anime communities overall.</p>
+                    <p>On our websites, you'll find well-moderated places to discuss everything <em>AoT</em> with many more fans like you.</p>
+                    <p>Join us and be part of the AoT Wiki community!</p>
                 </div>
                 <div id="business" class="about-content">
                     <p>
@@ -174,7 +205,7 @@
     </main>
     <footer class="shingeki-footer">
         <span class="footer-label">&copy; 2011-2023 <a href="https://aot.wikia.com/" target="_blank">Attack on Titan Wiki</a></span>
-        <span class="footer-label-secondary"><a href="https://aisys.dev" target="_blank">Site by Hackmagician</a></span>
+        <span class="footer-label-secondary">Site by <a href="https://aisys.dev" target="_blank"><span style="text-decoration: underline; color: rgb(200, 140, 140);">Aisys &nbsp;|&nbsp; Web Development & Design</span></a></span>
     </footer>
 </body>
 </html>
