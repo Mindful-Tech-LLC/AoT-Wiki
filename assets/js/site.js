@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
 })
 
 setInterval(function () {
-    const timeDifference = new Date("Nove 4, 2023 9:00 AM").getTime() - new Date().getTime();
+    const timeDifference = new Date(1699110000 * 1000).getTime() - new Date().getTime();
 
     const mdys = document.getElementById("ct-md");
     const mhrs = document.getElementById("ct-mh");
