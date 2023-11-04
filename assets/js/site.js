@@ -141,31 +141,31 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 })
 
-setInterval(function () {
-    const timeDifference = new Date(1699110000 * 1000).getTime() - new Date().getTime();
+// setInterval(function () {
+//     const timeDifference = new Date(1699110000 * 1000).getTime() - new Date().getTime();
 
-    const mdys = document.getElementById("ct-md");
-    const mhrs = document.getElementById("ct-mh");
-    const mmns = document.getElementById("ct-mm");
-    const mscs = document.getElementById("ct-ms");
+//     const mdys = document.getElementById("ct-md");
+//     const mhrs = document.getElementById("ct-mh");
+//     const mmns = document.getElementById("ct-mm");
+//     const mscs = document.getElementById("ct-ms");
 
-    const dys = document.getElementById("ctd");
-    const hrs = document.getElementById("cth");
-    const mns = document.getElementById("ctm");
-    const scs = document.getElementById("cts");
+//     const dys = document.getElementById("ctd");
+//     const hrs = document.getElementById("cth");
+//     const mns = document.getElementById("ctm");
+//     const scs = document.getElementById("cts");
 
-    const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+//     const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+//     const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//     const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+//     const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
-    dys.innerHTML = `${days}<br><span>days</span>`;
-    hrs.innerHTML = `${hours}<br><span>hours</span>`;
-    mns.innerHTML = `${minutes}<br><span>minutes</span>`;
-    scs.innerHTML = `${seconds}<br><span>seconds</span>`;
+//     dys.innerHTML = `${days}<br><span>days</span>`;
+//     hrs.innerHTML = `${hours}<br><span>hours</span>`;
+//     mns.innerHTML = `${minutes}<br><span>minutes</span>`;
+//     scs.innerHTML = `${seconds}<br><span>seconds</span>`;
 
-    mdys.innerHTML = `${days}<br><span>days</span>`;
-    mhrs.innerHTML = `${hours}<br><span>hours</span>`;
-    mmns.innerHTML = `${minutes}<br><span>minutes</span>`;
-    mscs.innerHTML = `${seconds}<br><span>seconds</span>`;
-}, 500)
+//     mdys.innerHTML = `${days}<br><span>days</span>`;
+//     mhrs.innerHTML = `${hours}<br><span>hours</span>`;
+//     mmns.innerHTML = `${minutes}<br><span>minutes</span>`;
+//     mscs.innerHTML = `${seconds}<br><span>seconds</span>`;
+// }, 500)
